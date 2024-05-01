@@ -1,0 +1,81 @@
+<html>
+    <head>
+	  <title>fun</title>
+	  <style>
+	     body{
+		    height:100vh;
+			disply:flex;
+			justify-content:center;
+			align-items:center;
+			flex-direction:coloum;
+		 }
+		 img{
+			 height:200px;
+			 width:200px;
+			 border:10px solid teal;
+			 padding:10px;
+			 border-radius:50%;
+			 animation:fan linear infinite; 
+		 }
+		 div{
+		     margin:20px 0px;
+		 }
+		 button{
+		    width:100px;
+			height:100px;
+			border-radius:100%;
+			background:teal;
+			color:#fff;
+			font-size:22px;
+			margin:0px 20px;
+		 }
+		 button:active{
+		    box-shadow:0px 10px 10px #000;
+			transform:scale(.98);
+		 }
+		 button:nth-child(1){
+		   background:green;
+		 }
+		  button:nth-child(2){
+		   background:red;
+		 }
+		@keyframes fan{
+                    100%{
+                        transform:rotate(360deg);
+                    }              
+                 }
+	  </style>
+	</head>
+	<body>
+	  <img src="images/fan.png" id="fun">
+	  <div>
+	      <button onclick="funon()">ON</button>
+	      <button onclick="funoff()">OFF</button>
+	      <button onclick="fun1()">1</button>
+	      <button onclick="fun2()">2</button>
+	      <button onclick="fun3()">3</button>
+	      <button onclick="fun4()">4</button>
+	  </div>
+	  <script>
+	       var f=document.getElementById("fun");
+		   function funon(){
+		      f.style.animationDuration=3+'s';
+		   }
+		   function funoff(){
+		      f.style.animationDuration=0+'s';
+		   }
+		   function fun1(){
+		      f.style.animationDuration=2+'s';
+		   }
+		   function fun2(){
+		      f.style.animationDuration=1.5+'s';
+		   }
+		   function fun3(){
+		      f.style.animationDuration=1+'s';
+		   }
+		   function fun4(){
+		      f.style.animationDuration=0.2+'s';
+		   }
+	  </script>
+	</body>
+<html>

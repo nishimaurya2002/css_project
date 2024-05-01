@@ -1,0 +1,86 @@
+<html>
+     <head>
+	     <title>text-properties</title>
+		 <style>
+		    h1{
+			  text-decoration-line :underline; /*line-through/overline/none*/
+			  text-decoration-color :aqua;  /*any color*/
+			  text-decoration-style :dotted; /*solid/double/dashed/wavy*/
+			  color:teal;
+			  text-decoration-thickness:3px;
+			}
+			h2{
+			   text-shadow:4px 5px 5px red;
+			   color:yellow;
+			   font-style:oblique;
+			}
+			h3{
+			   text-align:center;  /*right /left /justify*/
+			   font-weight:bold;
+			   font-style:italic;
+			    text-shadow:4px 5px 5px red;
+			}
+			h4{
+			  text-transform:uppercase;/*capitalize /lowercase /initial */
+			  color:teal;
+			}
+			/*text-spacing--- value:text-indent/letter-spacing/line-height/word-spacing*/
+			h5{
+			   letter-spacing:2px;
+			}
+			h6{
+			  word-spacing:8px;
+			}
+			.text-div p{
+			   height:200px;
+			   width:200px;
+			   border:2px solid #000;
+			   overflow:auto;/*hidden/visible/scroll/auto*/
+			}
+		    .box-text{
+			      width:300px;
+				  border:2px solid #000;
+				  word-wrap:break-word; /*only 1 value*/
+			}
+			.box-text1{
+			      width:300px;
+				  border:2px solid #000;
+				  word-break:break-all;  /*value:keep-all*/
+			}
+			
+			.box-text2{
+			   width:300px;
+			   height:200px;
+			   border:2px solid #000;
+			   white-space:pre-line;   /*value:pre/pre-line/work same as white-space :pre;but nowrap functionality not work*/
+			}
+			.box-text3{
+			  width:300px;
+			  border:2px solid #000;
+			  white-space:wrap; /*value:nowrap/wrap*/
+			}
+		 </style>
+	 </head>
+	 <body>
+	     <h1>Techsima Solution Private Limited</h1>
+	     <h2>Techsima Solution Private Limited</h2>
+	     <h3>Techsima Solution Private Limited</h3>
+	     <h4>Techsima Solution Private Limited</h4>
+	     <h5>Techsima Solution Private Limited</h5>
+	     <h6>Techsima Solution Private Limited</h6>
+		 <div class="text-div">
+		    <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems.At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems.</p>
+		 </div>
+		 <h3>word-wrap</h3>
+		 <div class="box-text">At Techsima, we aim toooooooooooooooooooooooo enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop compete with the fastchanging digital space, and soar your career to new heights. Techsima is also your one-stop </div><br><br>
+		     <h3>word-break</h3>
+		 	 <div class="box-text1">At Techsima, we aim toooooooooooooooooooooooo enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop compete with the fastchanging digital space, and soar your career to new heights. Techsima is also your one-stop </div><br>
+<h3>white-space</h3>			 
+<div class="box-text2">
+Techsima Solution   Private Limited.
+Techsima Solution Private Limited.
+Techsima Solution Private Limited.
+</div><br>
+             <div class="box-text3">At Techsima, we aim toooooooooooooooooooooooo enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop compete with the fastchanging digital space, and soar your career to new heights. Techsima is also your one-stop </div>
+	 </body>
+</html>

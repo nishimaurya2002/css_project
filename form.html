@@ -1,0 +1,138 @@
+<html>
+      <head>
+	      <title>Form Tag & Property</title>
+		  <style>
+		      *{
+			     margin:0px;
+				 padding:0px;
+				 box-sizing:border-box;
+			  }
+			  h1{
+			     text-align:center;
+				 color:teal;
+				 text-shadow:2px 5px 6px #ff0;
+			  }
+			  .form{
+			     min-height:300px;
+				 width:50%;
+				 border:15px inset #89ff;
+				 margin:40px auto;
+				 padding:.5rem 2rem;
+			  }
+			  fieldset{
+			      padding:2rem;
+			  }
+			  label{
+			     color:blue;
+				 font-size:18px;
+			  }
+			  legend{
+			     color:green;
+				 font-size:20px;
+				 font-weight:bold;
+			  }
+			  .input{
+			    height:30px;
+				width:100%;
+				margin:.6rem 0rem;
+				padding-left:.5rem;
+				color:red;
+			  }
+			  textarea{
+			      height:100px;
+				  width:100%;
+				  resize:none;
+				  margin:.6rem 0rem;
+			  }
+			  
+			  button{
+			     height:30px;
+				 width:100px;
+				 margin:1rem 0rem;
+				 background:orange;
+				 font-size:20px;
+				 border-radius:35px;
+				 border:2px solid #0ff;
+			  }
+		  </style>
+	  </head>
+	  <body>
+	      <div class="form">
+		      <h1>Register Form</h1>
+			  <form action="" Method="GET" enctype="multipart/form-data" alt="OFF">
+			       <!--fill Your personal information data-->
+				   <fieldset>
+				       <input type="hidden">
+					   <legend>Personal Info</legend>
+					   <label for="eid">Enroll Id</label>
+					   <input type="text" value="E201756000122" id="eid" class="input" readonly disabled>
+					   <label for="n" class="label">Name<span style="color:#f00;">*</span></label>
+					   <input type="text" id="n" name="name" placeholder="Enter Your Name" required class="input">
+					   <label for="fn" class="label">Father Name</label>
+					   <input type="text" class="input" id="fn" name="fname" placeholder="Enter your father name">
+					   <label for="pn"class="label">phone Number</label>
+					   <input type="number" class="input" id="pn" placeholder="+91-1546256858" name="num">
+					   
+					   <label for="email" class="label">Email</label>
+					   <input type="email" class="input">
+					   <label for="pass" class="label">Password</label>
+					   <input type="password" class="input">
+					   
+					   <label class="label">DOB</label>
+					   <input type="date" class="input">
+					   
+					   <label class="label">Time & Date</label>
+					   <input type="datetime-locals" class="input">
+					   
+					   <label class="label">Week</label>
+					   <input type="week" class="input">
+					   
+					   <label class="label">Month</label>
+					   <input type="month" class="input">
+					   
+					   <label class="label">color</label>
+					   <input type="color" class="input">
+					   <label class="label">Range</label>
+					   <input type="range" class="input">
+					   <label class="label">search</label>
+					   <input type="search" class="input">
+					   <label class="label">Gender</label><br></br>
+					   <input type="radio" checked name="gen">Male
+					   <input type="radio" name="gen">Female
+					   <input type="radio" name="gen">Other<br><br>
+					   
+					   <label class="label">Hobbies</label><br><br>
+					   <input type="checkbox" checked>Dancing
+					   <input type="checkbox" checked>Reading
+					   <input type="checkbox" checked>Playing
+				   </fieldset>
+				   <!--Your address Date-->
+				   
+				   <fieldset>
+				       <label>city</label>
+					   <select class="input">
+					        <optgroup label="Ayodhya">
+							     <option selected>Darshan Nagar</option>
+							     <option selected>Devkali</option>
+							     <option selected>Naka</option>
+							</optgroup>
+							
+							 <optgroup label="Gonda">
+							     <option selected>Darshan Nagar</option>
+							     <option selected>Devkali</option>
+							     <option selected>Naka</option>
+							</optgroup>
+							<label class="label">Photo</label>
+							<input type="file" multiple class="input">
+							<legend>Current Add</legend>
+							<label for="add">Addressss</label>
+							<textarea id="add" placeholder="Enter your current address" rows="10"cols="80"></textarea>
+					   </select>
+					 
+				   </fieldset>
+				     <button type="submit">Save</button>
+					   <button type="reset">Clear</button>
+			  </form>
+		  </div>
+	  </body>
+</html>

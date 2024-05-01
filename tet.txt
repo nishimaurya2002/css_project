@@ -1,0 +1,4 @@
+5 type-shadow
+uesing line-height property given diffrent height(100px 200px 300px 400px 500px )center,text-align
+
+border-shape

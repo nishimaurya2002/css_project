@@ -1,0 +1,153 @@
+<html>
+    <head>
+	    <title>card responsive</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <style>
+	        *{
+			  margin:0;
+			  padding:0;
+			  box-sizing:border-box;
+			}
+			.outer{
+			  width:100%;
+			  min-height:500px;
+			  display:flex;
+			  justify-content:space-evenly;
+			  align-items:center;
+			  flex-flow:wrap row;
+			}
+			.inner{
+			   width:20%;
+			   height:400px;
+			   background:#c0dcc0;
+			   border-radius:10px;
+			}
+			.inner1{
+			  background:#80BCBD;
+			}
+			.inner1 .image{
+			   width:100%;
+			   height:200px;  
+			}
+			.image img{
+			   width:100%;
+			   height:100%;
+			}
+            .inner1 .text{
+			   padding:30px 15px;
+			}
+            .text h5{
+				font-size:20px;
+				font-weight:400;
+			}
+            .text p{
+			  color:#ffffff;
+              padding-top:10px;			  
+			 }
+            .btn{
+			  color:teal;
+			  background:#ffffff;
+			  padding:10px 20px;
+			  border:none;
+			  margin:0px 80px;
+			}
+            .btn:hover{
+			    color:#ffffff;
+				background:#000;
+			}			
+			.inner2{
+			  background:aqua;
+			}
+			.inner2 .image{
+			   width:100%;
+			   height:200px;  
+			}
+			.inner2 .text{
+			   padding:30px 15px;
+			}
+			.inner3{
+			  background:pink;
+			}
+			.inner3 .image{
+			   width:100%;
+			   height:200px;  
+			}
+			.inner3 .text{
+			   padding:30px 15px;
+			}
+			.inner4{
+			  background:teal;
+			}
+			.inner4 .image{
+			   width:100%;
+			   height:200px;  
+			}
+			.inner4 .text{
+			   padding:30px 15px;
+			}
+			@media (max-width:1100px){
+			  .inner{
+			   width:30%;
+			   background:green;
+			   margin:10px 0px;
+			  }
+			}
+			@media (max-width:776px){
+			  .inner{
+			   width:45%;
+			   background:#e7b552;
+			  }
+			}
+			@media (max-width:500px){
+			  .inner{
+			   width:100%;
+			   background:#cedef7;
+			  }
+			}
+	    </style>
+	</head>
+	<body>
+	    <div class="outer">
+	        <div class="inner inner1">
+			    <div class="image">
+			        <img src="images/4.jpg">
+			    </div>
+				<div class="text">
+			        <h5>Education</h5>
+                    <p>This includes titles such as teacher, professor, principal, superintendent, counselor, etc.</p>					
+			    </div>
+				<button class="btn">Read More</button>
+			</div>
+	        <div class="inner inner2">
+			  <div class="image">
+			        <img src="images/5.jpg">
+			    </div>
+				<div class="text">
+			        <h5>Education</h5>
+                    <p>This includes titles such as teacher, professor, principal, superintendent, counselor, etc.</p>					
+			    </div>
+				<button class="btn">Read More</button>
+			</div>
+	        <div class="inner inner3">
+			    <div class="image">
+			        <img src="images/6.jpg">
+			    </div>
+				<div class="text">
+			        <h5>Education</h5>
+                    <p>This includes titles such as teacher, professor, principal, superintendent, counselor, etc.</p>					
+			    </div>
+				<button class="btn">Read More</button>
+			</div>
+	        <div class="inner inner4">
+			   <div class="image">
+			        <img src="images/7.jpg">
+			    </div>
+				<div class="text">
+			        <h5>Education</h5>
+                    <p>This includes titles such as teacher, professor, principal, superintendent, counselor, etc.</p>					
+			    </div>
+				<button class="btn">Read More</button>
+			</div>
+	    </div>
+	</body>
+</html>

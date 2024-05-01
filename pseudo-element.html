@@ -1,0 +1,55 @@
+<html>
+    <head>
+	    <title>Pseudo element selector</title>
+	    <style>
+	        *{
+			   margin:0px;
+			   padding:0px;
+			}
+			ul{
+			   list-style-type:none;
+			}
+			li{
+			   padding:20px;
+			   margin:0px 20px;
+			   float:left;
+			   position:relative;
+			}
+			li::after{
+			   content:"";
+			   height:2px;
+			   width:30px;
+			   background:red;
+			   position:absolute;
+			   top:38px;
+			   left:7px;
+			   opacity:0;
+			   transition:all ease 2s;
+			}
+			li:hover::after{
+			    opacity:1;
+			}
+			li:hover::before{
+			    opacity:1;
+			}
+		    li::before{
+			   content:"";
+			   height:2px;
+			   width:30px;
+			   background:red;
+			   position:absolute;
+			   top:38px;
+			   left:40px;
+			   opacity:0;
+			    transition:all ease 2s;
+			}
+	    </style>
+	</head>
+    <body>
+	    <ul>
+		  <li>Home</li>
+		  <li>about</li>
+		  <li>contact</li>
+		</ul>
+	</body>	
+</html>

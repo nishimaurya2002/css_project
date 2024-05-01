@@ -1,0 +1,47 @@
+<html>
+    <head>
+	    <title>transition-property</title>
+		<style>
+		     .d1{
+			    height:200px;
+				width:200px;
+				background:teal;
+				transition-property:height;
+				transition-duration:2s;
+			 }
+			 .d1:hover{
+			   height:300px;
+			   width:300px;
+			 }
+			 .d2{
+			    height:200px;
+				width:200px;
+				background:#b5d6f7;
+				transition-property:width;
+				transition-duration:2s;
+			 }
+			 .d2:hover{
+			   height:300px;
+			   width:300px;
+			 }
+			 .d3{
+			    height:200px;
+				width:200px;
+				background:#ef8c39;
+				/*transition-property:all;
+				transition-duration:2s;
+				transition-delay:2s;*/
+				transition:all 2s 2s;
+			 }
+			 .d3:hover{
+			   height:300px;
+			   width:300px;
+			 }
+		</style>
+	</head>
+	<body>
+	  <div class="d1"></div>
+	  <div class="d2"></div>
+	  <div class="d3"></div>
+	</body>
+</html>

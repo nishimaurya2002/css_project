@@ -1,0 +1,35 @@
+<html>
+    <head>
+	    <title>image Gallery</title>
+		<style>
+		     .div{
+			 
+			     width:400px;
+				 height:400px;
+			 }
+		     .div img{ 
+			    filter:saturate(0%);
+				width:10%;
+				border:2px solid whitesmoke;
+				height:100%;
+				object-fit:cover;
+				border-radius:12px;
+				transition:all ease 2s;
+				cursor:pointer;
+			 }
+			 .div img:hover{
+			   filter:saturate(100%);
+			   width:100%;
+			 }
+		</style>
+	</head>
+    <body>
+	    <div class="div">
+		   <img src="images/1.jpg">
+		   <img src="images/2.jpg">
+		   <img src="images/3.jpg">
+		   <img src="images/4.jpg">
+		</div>
+		
+	</body>
+</html>

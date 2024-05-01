@@ -1,0 +1,31 @@
+<html>
+    <head>
+	    <title>Animation</title>
+		<style>
+		 .animate{
+		      height:400px;
+			  width:600px;
+			  margin:100px auto;
+			  background-image:url(images/1.jpg);
+			  border:30px double #F3D7CA;
+			  background-position:center;
+			  background-size:cover;
+			  animation-name:animate;
+			  animation-duration:10s;
+			  animation-iteration-count:infinite;
+			  
+		   }
+		   @keyframes animate{
+		     0%{ background-image:url(images/2.jpg);}
+		     25%{ background-image:url(images/3.jpg);}
+		     50%{ background-image:url(images/4.jpg);}
+		     75%{ background-image:url(images/5.jpg);}
+		     100%{ background-image:url(images/1.jpg);}
+		   }
+		</style>
+	</head>
+	<body>
+	    <div class="animate">  
+		</div>
+	</body>
+<html>

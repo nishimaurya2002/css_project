@@ -1,0 +1,64 @@
+<html>
+    <head>
+	    <title>Transition</title>
+		<style>
+		     #box{
+			    width:200px;
+				height:150px;
+				background:#faaa3c;
+				transition-property:width, height,background; /*height/color/all*/
+				transition-duration:2s,4s,4s;
+				
+				/*shorthand:-transition:all 2s linear 1s*/
+				
+				transition-timing-function:steps(4,start); 
+				/*linear/easy-in/easy-out/easy-in-out/step-start/step-end/cubic-bezier(0.1,0.7,1.0,0.1)*/
+				
+				transition-delay:2s;
+			 }
+			 #box:active{
+			   width:300px;
+			   height:300px;
+			   background:red;
+			 }
+			 input{
+			   width:150px;
+			   transition:width 1.5s;
+			 }
+			 input:focus{
+			     width:300px;
+			 }
+			 
+			 .img-div{
+			    width:300px;
+				height:300px;
+				background-image:url(images/2.jpg);
+				background-size:cover;
+				position:relative;
+			  overflow:hidden;
+			 }
+			 .box1{
+			    width:300px;
+				height:300px;
+				position:absolute;
+				top:-100%;
+				background:rgba(224, 224 ,128,0.6);
+			
+				transition:all ease 2s;
+			 }
+			 .img-div:hover .box1{
+			     top:0%;
+			 }
+		</style>	
+	</head>
+	<body>
+	    <h1>Transition</h1>
+		<div id="box">
+       </div><br><br>
+	   <input type="text">
+	   <br><br>
+	   <div class="img-div">
+	       <div class="box1">Techsima</div>
+	   </div>
+	</body>
+</html>

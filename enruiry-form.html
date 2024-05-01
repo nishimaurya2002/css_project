@@ -1,0 +1,67 @@
+<html>
+     <head>
+	     <title>Enquiry form</title>
+		 <style>
+		    *{
+			  margin:0px;
+			  padding:0px;
+			}
+			form{
+			  width:500px;
+			  margin:60px auto;
+			}
+			fieldset{
+			  border:4px solid navy;
+			  padding:20px 40px;
+			}
+			legend{
+			 text-align:center;
+			 color:teal;
+			 font-size:20px;
+			}
+			label{
+			 font-size:18px;
+			 color:blue;
+			}
+			input{
+			  height:40px;
+			  width:100%;
+			  margin:5px 0px 20px;
+			  padding:0px 0px 0px 5px;
+			  border:2px solid teal;
+			  color:teal;
+			}
+		     textarea{
+			  width:100%;
+			  margin:5px 0px 20px;
+			  padding:0px 0px 0px 5px;
+			  border:2px solid teal;
+			  resize:none;
+			}
+			span{
+			   color:red;
+			}
+			::placeholder{
+			  color:teal;
+			}
+		 </style>
+	 </head>
+	<body>
+	  <h1 align="center">Enquiry Form</h1>
+	  <hr>
+	  <form autocomplete="ON" action="#" method="GET" enctype="multiple/form-data">
+	    <fieldset>
+		    <legend>Enquiry Form</legend>
+			<label for="name">Name<span>*</span></label><br>
+			<input type="text" id="name" required name="name" placeholder="Enter Your Name"><br><br>
+			<label for="mno">Mobile Number<span>*</span></label><br>
+			<input type="number" id="mno"required name="mobile" placeholder="Enter Your number"><br><br>
+			<label for="email">Email<span>*</span></label>
+			<input type="email" id="name" required placeholder="Enter Your email">
+			<label for="msg">Message<span>*</span></label>
+			<textarea placeholder="message here..." rows="5" name="msg"></textarea>
+			<input type="submit" value="Send">
+		</fieldset>
+	  </form>
+	</body>
+</html>

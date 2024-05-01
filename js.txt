@@ -1,0 +1,28 @@
+
+----------------------------------------javascript-------------------------------------------------
+java:-interpeter/
+1996/1995:brendan eich
+
+backend:-node js 
+frantend:-react,angular,jquery
+
+javascript are use to teo way-
+ 
+ use in head tag
+ use in body tag
+ outside the html code 
+ 
+ output method:-
+ console.log():-developertool
+ deoucument.wirte():-viewport
+ alert():-popup box display
+ 
+ note:-alwaye use to the javascript code in script tag.
+ 
+ type of javascript
+ 1. External js// es me outside script tag ka use nhi karenge
+ 2.Internal js
+ 
+  htmlfile   <------js file //alert("hello world")
+  <script scr="js/file name .ext">
+  </script>

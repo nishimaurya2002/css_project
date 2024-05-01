@@ -1,0 +1,73 @@
+
+<html>
+    <head>
+	   <title>Watch css</title>
+	   <style>
+			.outer {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			border: 10px solid #333;
+			border-radius: 50%;
+			margin:100px auto;
+			}
+
+			.hour,
+			.minute,
+			.second{
+			position: absolute;
+			background-color: #333;
+			}
+
+			.hour{
+			width: 6px;
+			height: 50px;
+			top: 50px;
+			left: 97px;
+			transform-origin: bottom center;
+			}
+
+			.minute{
+			width: 4px;
+			height: 70px;
+			top: 30px;
+			left: 98px;
+			transform-origin: bottom center;
+			}
+
+			.second{
+			width: 2px;
+			height: 80px;
+			top: 20px;
+			left: 99px;
+			background-color: red;
+			transform-origin: bottom center;
+			animation: rotate 60s linear infinite;
+			}
+
+			.center {
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: #333;
+			border-radius: 50%;
+			top: 95px;
+			left: 95px;
+			}
+
+			@keyframes rotate {
+			to {
+			transform: rotate(360deg);
+			}
+			}
+	   </style>
+	</head>
+	<body>
+	    <div class="outer">
+		   <div class="hour"></div>
+		   <div class="minute"></div>
+		   <div class="second"></div>
+		   <div class="center"></div>
+		</div>
+	</body>
+</html>

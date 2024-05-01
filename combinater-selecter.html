@@ -1,0 +1,96 @@
+<html>
+   <head>
+      <title>combinater selectors</title>
+	  <style>
+	    p span{
+		  color:red;
+		}
+		.list li{
+		  color:green;
+		}
+	    .list > li{
+		color:red;
+		}
+		.box1{
+		  padding:10px;
+		  margin-top:50px;
+		  border:3px solid red;
+		}
+		.box2{
+		  border:3px solid green;
+		}
+		.box1 > p{
+		  color:blue;
+		}
+		ul+p{
+		 color:red;
+		}
+		.list2 ~ p{
+		  color:teal;
+		}
+		h2 ~ p{
+		 color:#e0e080;
+		}
+		.box3{
+		 border:3px solid red;
+		 padding:10px;
+		}
+	  </style>
+   </head>
+   <body>
+      <h1>Descendent selector</h1>
+	  <p><span>Techsima solution private limited</span></p>
+	  
+	  <h2>Child selector</h2>
+	  <ul class="list">
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited
+		 <ul>
+		  <li>Ayodhya</li>
+		  <li>Ayodhya</li>
+		  <li>Ayodhya</li>
+		  </ul>
+		</li>
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	  </ul>
+	  <div class="box1">
+	    <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+		<div class="box2">
+		  <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+		</div>
+	  </div>
+	  
+	  <h2>Adjacent Sibling Selector</h2>
+	   <ul class="list1">
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	  </ul>
+	  <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+	  <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+	  <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+	  <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+	  
+	  <h2>General Sibling Selectors</h2>
+	  <ul class="list2">
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	    <li>Techsima solution private limited</li>
+	  </ul>
+	    <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+		<p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+		<p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+		<h3>Heading</h3>
+		  <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+		  <div class="box3">
+		  <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+		</div>
+		 <p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems</p>
+   </body>
+</html>

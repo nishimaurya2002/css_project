@@ -1,0 +1,66 @@
+<!-- 
+notes:-
+1. letter spacing:pix
+2. word spacing:pix
+3. word wrap: break-word;
+4. text-transform:capitalize,uppercase, lowercase
+5. white-space:nowrap, pre
+6. text-indent:px %;
+-->
+<html>
+	<head>
+		<title>Text-format</title>
+		<style>
+			.btn{
+				border:2px solid #f00;
+				padding:10px 20px;
+				border-radius:20px;
+				background:transparent;
+				color:red;
+				
+				transition:all ease 2s;
+			}
+			.btn:hover{
+				background:red;
+				color:white;
+				letter-spacing:1px;
+			}
+			p{
+				word-spacing:14px;
+			}
+			.para{
+				border:2px solid #000;				
+				word-wrap:break-word;
+				text-align:justify;
+			}
+			#para{
+				white-space:nowrap;
+				white-space:pre;
+			}
+			.indent{
+			  text-indent:60px;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="btn">Submit</button>
+		<p>At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems.</p>
+		<p class="para">Techsima Solution private Limited
+			Techsimaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa Solution private Limited
+			Techsima Solution private Limited
+			Techsima Solution private Limited
+			Techsima Solution private Limited
+			Techsima Solution private Limited
+		</p>
+		<p id="para">
+						Techsima Solution private Limited
+			Techsima Solution private Limited
+			Techsima Solution private Limited
+			Techsima Solution private Limited
+			Techsima Solution private Limited
+			Techsima Solution private Limited
+			Techsima Solution private Limited
+			</p>
+			<p class="indent">At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space, and soar your career to new heights. Techsima is also your one-stop solution for all your technical problems.<p>
+	</body>
+</html>

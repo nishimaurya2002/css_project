@@ -1,0 +1,61 @@
+<html>
+    <head>
+	    <title>Timing-funation</title>
+		<style>
+		    .d1{
+		       height:80px;
+			   width:80px;
+			   background:#80BCBD;
+			   animation:demo 5s ease 2 alternate;
+			   position:relative;
+		    }
+			.d2{
+		       height:80px;
+			   width:80px;
+			   background:#AAD9BB;
+			   animation:demo 5s ease-in 2 alternate;
+			   position:relative;
+		    }
+			.d3{
+		       height:80px;
+			   width:80px;
+			   background:#D5F0C1;
+			   animation:demo 5s ease-out 2 alternate;
+			   position:relative;
+		    }
+			.d4{
+		       height:80px;
+			   width:80px;
+			   background:#F9F7C9;
+			   animation:demo 5s ease-in-out 2 alternate;
+			   position:relative;
+		    }
+			.d5{
+		       height:80px;
+			   width:80px;
+			   background:#F3CCF3;
+			   animation:demo 5s linear 2 alternate;
+			   position:relative;
+		    }
+			.d6{
+		       height:80px;
+			   width:80px;
+			   background:#DC84F3;
+			   animation:demo 5s cubic-bezier(.17,.67,.83,.67) 2 alternate-reverse;
+			   position:relative;
+		    }
+			@keyframes demo{
+			  from{left:0;}
+			  to{left:100%;}
+			}
+		</style>
+	</head>
+	<body>
+	    <div class="d1"></div>
+	    <div class="d2"></div>
+	    <div class="d3"></div>
+	    <div class="d4"></div>
+	    <div class="d5"></div>
+	    <div class="d6"></div>
+	</body>
+</html>

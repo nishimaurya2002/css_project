@@ -1,0 +1,99 @@
+<html>
+      <head>
+	       <title>Login Form</title>
+		   <style>
+	             *{
+				   padding:0px ;
+				   margin:0px;
+				   box-sizing:border-box;
+				 }
+                body{
+				   display:flex;
+				   justify-content:center;
+				   align-items:center;
+				   background:aqua;
+				}
+              h1{
+			    text-align:center;
+				color:green;
+				padding-top:40px;
+			  }				
+               .outer-form{
+			          width:600px;
+					  height:600px;
+			          background:#eee;
+					  border-radius:20px;
+					  display:flxe;
+					  justify-content:center;
+					  align-items:center;
+			   }	
+               form{
+			      display:flex;
+				  flex-direction:column;
+				  justify-content:center;
+				  padding:45px;
+			   }
+             form label{
+				   color:green;
+				   font-size:18px;
+				  padding:3px;
+			 }
+             form input{
+			       width:500px;
+				   height:40px;
+				   padding-top:40px;
+			 }
+            button{
+			    width:120px;
+				height:40px;
+				background:aqua;
+				color:green;
+				border-radius:10px;
+				font-size:20px;
+			}
+			#pwd{
+			   postion:relative;
+			}
+			#eye{
+			     height:4.5vmin;
+				 width:5.5vmin;
+				 position:absolute;
+				 top:42%;
+				 right:35%;
+				 
+			}
+			
+			.cpt{
+			   padding:3vmin;
+			   position:relative;
+			}
+			.cpt span{
+			   font-style:italic;
+			   text-decoration:line-through;
+			   font-size:5vmin;
+			}
+			.cpt img{
+			    height:6vmin;
+				width:6vmin;
+				position:absolute;
+				top:25%;
+				right:16%;
+			}
+		   </style>
+	  </head>
+	  <body>
+	       <div class="outer-form">
+		      <h1>Login Form</h1>
+		      <form>
+			       <label for="uname">Use Name</label>
+				   <input type="text" name="unmae" id="unmae"><br>
+				   <label for="pwd">password</label>
+				   <input type="password" name="pwd"  id="pwd">
+				   <img id="eye" src="images/eye.png">
+				   <div class="cpt" id="cpt-match"><span>ABCDS</span><img id="refresh" src="images/cpt.png"></div>
+				   <input type="text" name="captcha"  id="captcha" ><br>
+				   <button>Send</button>
+			  </form>
+		   </div>
+	  </body>
+</html>

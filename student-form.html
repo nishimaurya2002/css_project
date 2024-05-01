@@ -1,0 +1,141 @@
+<html>
+     <head>
+	      <title>student register form</title>
+		  <style>
+		      *{
+			  margin:0px;
+			  padding:0px;
+			}
+			h1{
+			  text-align:center;
+			  color:red;
+			}
+			form{
+			  width:900px;
+			  margin:60px auto;
+			}
+			fieldset{
+			  border:4px solid navy;
+			  padding:20px 40px;
+			}
+			legend{
+			 text-align:center;
+			 color:teal;
+			 font-size:20px;
+			}
+			label{
+			 font-size:18px;
+			 color:blue;
+			}
+			input,select{
+			  height:40px;
+			  width:100%;
+			  margin:5px 0px 20px;
+			  padding:0px 0px 0px 5px;
+			  border:2px solid teal;
+			  color:teal;
+			}
+			.outer{
+			  width:100%;
+			}
+			.left{
+			  width:50%;
+			  float:left;
+			}
+			.right{
+			  width:48%;
+			  float:left;
+			  margin-left:10px;
+			}
+			input[type="radio"]{
+			     width:10%;
+				 height:auto;
+			}
+			input[type="checkbox"]{
+			     width:10%;
+				 height:auto;
+			}
+			input[type="submit"]{
+			     width:15%;
+				 font-size:22px;
+			}
+			input[type="reset"]{
+			     width:10%;
+				 font-size:22px;
+			}
+		  </style>
+	 </head>
+	 <body>
+	    <h1> Register Form</h1>
+		<hr>
+		<form>
+		    <fieldset>
+			    <legend>Student Register Form</legend>
+				<div class="outer">
+				<div class="left">
+					<label for="enroll">Enroll Id</label>
+				    <input type="text" id="enroll" name="enroll" value="E20560001" readonly disabled>
+				</div>
+				<div class="right">
+					<label for="name">Name</label>
+				    <input type="text" id="name" name="name">
+					</div>
+				 </div>
+                <div class="outer">
+				   <div class="left">
+					 <label for="fname">Father Name</label>
+					 <input type="text" id="fname" name="fname">
+				  </div>
+				   <div class="right">
+					 <label for="dob">Date Of Birth</label>
+				     <input type="datetime-local" id="dob" name="dob">
+					</div>
+				</div>
+				
+				<div class="outer">
+				  <div class="left">
+					<label for="email">Email id</label>
+				    <input type="email" id="email" name="email">
+				  </div>
+				   <div class="right">
+	                <label for="no">Phone Number</label>
+				    <input type="number" id="no" name="no">
+					</div>
+				</div>
+				<div class="outer">
+				  <div class="left">
+					<label for="gen">Gender</label><br>
+				    <input type="radio" id="gen" name="gen">Male
+				    <input type="radio" id="gen" name="gen">Female
+				    <input type="radio" id="gen" name="gen">Other
+				  </div>
+				   <div class="right">
+	            	<label for="Quli">Qulification</label><br>
+				    <input type="checkbox" checked id="Quli" name="Quli" value="High Sschool">High School
+				    <input type="checkbox" id="Quli" name="Quli" value="Intermediate">Intermediate
+				    <input type="checkbox" id="Quli" name="Quli" value="Diploma">Diploma
+					</div>
+				</div>
+				<div class="outer">
+				  <div class="left">
+					<label for="city">City</label><br>
+				   <select>
+				         <option>Ayodhya</option>
+				         <option selected>Ambedkar Nagar</option>
+				         <option>Gonda</option>
+				         <option>Besti</option>
+				   </select>
+				  </div>
+				   <div class="right">
+	            	<label for="file">Photo</label><br>
+				    <input type="file" id="file" multiple name="file">
+					</div>
+				</div>
+			    <div class="outer">
+				    <input type="submit" value="save">
+				    <input type="reset"  value="clear">
+				</div>
+			</fieldset>
+		</form>
+	 </body>
+</html>

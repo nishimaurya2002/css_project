@@ -1,0 +1,63 @@
+<html>
+    <head>
+	    <title>table-properties</title>
+		<style>
+		     table{
+			      /*border-spacing:5px 10px; border:horizontal/vertical one value bhi de sakte hai*/
+				  
+				  width:300px;
+				  border-collapse:collapse ;/*separate*/;
+				 /*empty-cells:hide; show*/
+				 table-layout:auto; /*fixed*/
+			 }
+		     table,td,th{
+			    border:1px solid #c60000;
+			 }
+			 td,th{
+			    vertical-align:top;/*bottom/middle*/
+				padding:10px 5px;
+			 }
+			 caption{
+			      caption-side:bottom;/*top*/
+			 }
+			 tr:hover{
+			     background:#f2f2f2;
+			 }
+			 tr:nth-child(even){
+			   background:#ff8000;
+			   color:#fff;
+			 }
+		</style>
+	</head>
+	<body>
+	    <h1>Table-style</h1>
+		<table>
+		<caption>TECHSIMA</caption>
+		     <tr>
+			    <th>Techsima</th>
+			    <th>Techsima</th>
+			    <th>Techsima</th>
+			 </tr>
+			 <tr>
+			    <td>1 At Techsima, we aim to enhance your coding skills to compete with the fast-changing digital space</td>
+			    <td>2</td>
+			    <td>3</td>
+			 </tr>
+			 <tr>
+			    <td>1</td>
+			    <td>2</td>
+			    <td></td>
+			 </tr>
+			  <tr>
+			    <td>1</td>
+			    <td>2</td>
+			    <td>3</td>
+			 </tr>
+			  <tr>
+			    <td>1</td>
+			    <td>2</td>
+			    <td>3</td>
+			 </tr>
+		</table>
+	</body>
+</html>

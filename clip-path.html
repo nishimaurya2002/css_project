@@ -1,0 +1,18 @@
+<html>
+    <head>
+	    <title>clip-path</title>
+		<style>
+		  img{
+		     clip-path:circle(25% at 50% 50%); /*ellipe(horizontal(60%)vertical(20%)x-axis(40%)y-axis(30%))/inset(top(5%) right(4%)bottom(3%)left(6%))/polygon(x-axis y-axis,x-axis y-axis,x-axis y-axis)*/
+		  }
+		  .img1{
+		    clip-path:polygon(50% 0%,0% 100%,100% 100%);
+		  }
+		</style>
+	</head>
+	<body>
+	   <h1>clip-path</h1>
+	   <img src="images/2.jpg">
+	   <img src="images/3.jpg" class="img1">
+	</body>
+</html>

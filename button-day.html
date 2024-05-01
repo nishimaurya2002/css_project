@@ -1,0 +1,65 @@
+<html>
+    <head>
+	   <title>Button</title>
+	   <style>
+	        .checkbox .slide{
+			   width:230px;
+			   height:60px;
+			   display:flex;
+			   align-items:center;
+			   justify-content:space-around;
+			   cursor:pointer;
+			}
+			.checkbox .slide .text{
+			    font-size:16px;
+				font-weight:700;
+				z-index:100;
+				cursor:pointer;
+			}
+			.check:checked+ .checkbox .slide .toggle{
+			      transform:translate(113px);
+				  background:linear-gradient(40deg ,red ,teal 70%);
+				  box-shadow:-0px -0px 10px red,-0px -0px 3px teal;
+				  
+			}
+			 .check:checked+.checkbox.slide{
+			   background:yellow;
+			   color:#000;
+			}
+			.checkbox{
+			  width:223px;
+			  height:60px;
+			  background:#d0d0d0;
+			  border-radius:30px;
+			  position:relative;
+			  color:black;
+			  overflow:hidden;
+			}
+			#checkbox_toggle{
+			   display:none;
+			}
+			.checkbox .toggle{
+			  width:100px;
+			  height:50px;
+			  position:absolute;
+			  left:5px;
+			  border-radius:30px;
+			  cursor:pointer;
+			  background:linear-gradient(40deg ,green,pink 70%);
+			  transition:0.4s;
+			  box-shadow:0px 0px 3px rgb(225,225,20),0px 0px 5px rgb(225,225,20);
+			}
+	   </style>
+	</head>
+    <body>
+	     <input id="checkbox_toggle" type="checkbox" class="check">
+		 <div class="checkbox">
+		    <label class="slide" for="checkbox_toggle">
+				<label class="toggle" for="checkbox_toggle"></label>
+				<label class="text" for="checkbox_toggle">Day</label>
+				<label class="text" for="checkbox_toggle">Night</label>
+			</label>
+		    
+		 </div>
+	</body>	
+</html>

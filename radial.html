@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Gradient Property</title>
+		<style>
+			.radial{
+				height:300px;
+				width:300px;
+				margin:100px auto;
+				background:radial-gradient(aqua, gold ,silver);
+				background:radial-gradient(circle, gray, skyblue,red);
+				background:repeating-radial-gradient(circle, white 0% , yellow 10% , black 20%);
+				transition: all ease 2s;
+			}
+			
+			.radial:hover{
+				border-radius:50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="radial"></div>
+	</body>
+</html>
