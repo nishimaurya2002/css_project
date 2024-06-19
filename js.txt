@@ -7,22 +7,109 @@ backend:-node js
 frantend:-react,angular,jquery
 
 javascript are use to teo way-
+-----------------------------
  
- use in head tag
- use in body tag
- outside the html code 
+ --> use in head tag
+ --> use in body tag
+ --> outside the html code 
  
  output method:-
- console.log():-developertool
- deoucument.wirte():-viewport
- alert():-popup box display
+ --------------
+--> console.log():-developertool
+--> deoucument.wirte():-viewport
+--> alert():-popup box display
  
  note:-alwaye use to the javascript code in script tag.
  
  type of javascript
+ -------------------
  1. External js// es me outside script tag ka use nhi karenge
  2.Internal js
- 
+  
   htmlfile   <------js file //alert("hello world")
   <script scr="js/file name .ext">
   </script>
+
+
+variable:- variable is a store the  data in memory.
+-----------
+
+there are use to the create a variable in 3 type keyword
+1.var
+2.let
+3.const
+       (keyword) var (identifier/variable)a=(assignment)"techsima(string/datatype)";(termination)
+		
+ var name (a) ko hi identifier khahte hai
+ 
+ create a identifier rules:-
+ -------------------------
+ 1. it is started alwaye alphabet/some special character(_ $)
+ Ex:- A ,a, _a,$a
+ 
+ 2. it is use to the mixin the alph+num value.
+ Ex:- arr3,arr_3
+ 
+ Not allowed the variable:-
+ ------------------------
+ 
+ 1. not a strated on number Ex:- 1a,3arr
+ 
+ 2. _ ,$ special character are allowed the variable name create but other special character are not allowed . Ex:- &a,+a;
+ 
+ js ke andar koi tag use ham ("<br>")ke andar karte hai
+ 
+ 
+ make a variable use in keyword:-
+  1.var:-
+  
+          var a ="Techsima";
+		  var a="solution";// declare again
+		  var a="12";// again assign
+  2.let:-
+          
+		  let a="techsima";
+		  let a="solution";// error not allowed a again declare
+		  let a="12"// again assign;
+  3. const:-
+  
+          const a="techsima";
+		  const a="solution";// not declare again
+		  const a="12";// not again assign
+	
+	-------------------------Data Type-----------------------
+	1.number
+	2.string            typeof()
+	3.boolean
+	4.array--------
+	5.object                object
+	6.null
+	7.undifiend-------
+	
+	Note :-js are check the datatype in compile time dos't not declare before the create a datatype.
+	
+	--------------------Operater-----------------
+	
+	var a=10;
+	var b=20;
+	var c=a+b;
+	
+	1. Airthmatic
+	
+	2. Assignment
+	
+	3. logical && || !
+	
+	4. Comparison ==(is used to checked equlitiy) ===(is used to check equlitiy and data type ) != !== <= >= > <
+	
+	5. unary  ++ --
+	
+	6. ternary:-
+	
+	input method:-
+	--------------
+	
+	prompt:-user for used input value
+	
+	
+	 

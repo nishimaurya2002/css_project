@@ -1,4 +1,12 @@
+1/2/2024
 5 type-shadow
 uesing line-height property given diffrent height(100px 200px 300px 400px 500px )center,text-align
 
-border-shape
+border-shape(5)
+
+webpages(5,7,9,10,11,(widthout responsive)12,13,14,15,16(width responsive))
+2/1/2024
+box-shadow(5inset,5outset)
+overflow(1)
+font-famil(5(2type))
+univrsal,group selector

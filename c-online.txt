@@ -1,0 +1,763 @@
+-----------------C Programming------------------------------
+
+Programming Language: 
+--------------------->
+1.	Low Level Language: 
+    ------------------
+       Machine language
+               0/1(Binary code) :     
+               Not easy for programmer
+               Not   portable
+          
+       Assembly language: 
+               ADD, SUB, DIV , MUL
+                Assembler used
+               ADD reg1 reg2;
+               Not portable
+2.	High Level language: 
+------------------------
+            Portable
+             English like language
+              
+
+
+
+		Translator
+		Assembler
+		
+		Compiler : 
+		-----------
+		
+		Aaaaaaaaaa
+		Sssssssssssss   - error
+		Dddddddd
+		Fffffffff                 - error
+		Hhhhhhhhhhh    - error
+
+    Interpreter:
+	-----------
+			Aaaaaaaaaaaaaaaaa
+			Ssssssssssssssssssssss    
+			Ddddddddddddddd
+			Fffffffffffffffffff   
+			dddddddddd
+
+
+structure of C code:
+-------------------- 
+		#include<stdio.h>
+		void  main()
+		{
+		printf(“  Hello ”);
+		}
+
+
+
+		Manish k
+		DOB
+		MOB
+		Village
+		Dist
+		State
+		Country
+
+
+
+		Void:empty(no return tpye)
+		
+		Int main()
+		{
+		Printf(“”);
+		Scanf(“”);
+		Getch();
+		}
+-------------------------------------------------------
+  Variable:-name of memory location used to store the dynamic data;
+-----------
+  {Data type list;  int a,b,c   int a=10;}
+     Rule: 1.start with alphabet,underscore(_);
+           2.No whitespace allowed in variable name.
+           3.variable name must not be any keyword.
+           4.digite may be in variable name but not at starting;
+    TYPE:-
+    ----
+		1.Local var
+		----------->
+		Decaled inside the function or block;
+		By default value:garbage
+		Void Main()
+		{
+		Int a,b
+		}
+		-------------------------------------------------
+		2.Globale
+		--------->
+		Decale outside function or block;
+		By default value:zero
+		Void fun()
+		{
+		Int a,d;//local var
+		}
+		Int c;//globale var
+		--------------------------------------
+		3.static
+		--------->
+		By default value:zero
+		Void Main()
+		{
+		Static int a=10;
+		}
+----------------------------------------------------------
+		Constant :uncahngabe
+		+, -, *, /, ’a’, ’b’
+		
+		Keyword:
+		-------
+		Predefined word or reserved word 
+		( int, float, include,return, break, goto, if , else, void, default ,char , double ,while ,for………)
+		
+		Identifier:-
+		-----------
+		Represents name : variable name(int a,) ,function name(viod fun()) , array name(int arr[5]), union name ..
+		
+     DATA TYPE:-
+	 ----------
+  1)primary/(fixed size)            2)non primitive / derived(size not fixed)
+   Fixed basic data type                         user defined data type
+
+Primitive data type:-
+		Int 
+		Float
+		Long
+		Char : 1byte
+		Double
+		Long int
+		Long double
+		Short
+Non primitive:-
+		array
+		structure
+		union
+		pointer
+
+Formate specifier:-
+
+		Integer:%d
+		Float:%f
+		Char:%c
+		String:%s
+		Long int:%ld
+		Long long int:%lld
+		
+ Binary number:-
+
+	0,1  :2 :2^1 :0-1
+	 
+	00,01,10,11 :4  :2^2 :0-3
+
+	000,001,010,011,100,101,110,111 :8 :2^3 :0-7
+
+ N digit binary:-
+----------------
+	Total number : (2^n)
+	Range :0  - (2^n)-1
+ 
+	Signed and unsigned number:-
+	--------------------------
+	Singe: -ve and +ve
+	Unsigned: +ve
+
+	Let unsigned
+	-----------------
+	Short int –2byte---16bit : 2^16 =65536:0-65535
+	Short int a=65535
+
+	Let signed number
+	----------------
+	Short int -2byte-16bit-65536: 0-65535
+	65536/2=32768 : -32768 to -1
+								  : 0,1,3,4……………………………..32767
+
+		Char a=128;
+		Printf(“%d”,a);// -128
+		Printf(“%c”,a)// ?
+		Char a=65;
+		Printf(“%c”,a)//A
+		Char  a=’A’
+		Printf(“%d”,a)//65
+
+
+	2bit:-00 01 10 11:2^2
+	8bit:-2^8 :256: /2  -ve to
+
+
+       ------Operator in C-----
+	   
+		1)operator work on operand/value
+		2)every operator has a value
+
+         statement: line ending with semicolon
+         expression: statement with some value
+         10;
+         10+20;
+          30/2;
+
+  1)Assignment operator(=): update the value of variable.
+           Int a=1;
+             a=20;
+        LHS=RHS
+       VarName =constant,expression,literal,variable
+  2)Arithmetic operator
+       Unary  :- + -
+      Binary  :- + - * /  %
+   ----------------------------------
+   %(modulo operator):- Binary operator 
+                     a%b: remainder
+					 
+   Note: a%b: i) a and b must be int
+             ii) singn of result is sameas the sign of first operand
+
+   ex:-  -12%5= -ve
+          12%-5= +ve
+         -12%-5= -ve
+          printf(“%d”,10+20);//30
+          Printf(“%d”,a=20);// 20
+
+Relational Operator:- binary operator 
+                      Result: 0 or 1 ( F or T)        
+(< , > , == , >= , <=, != )
+
+	Printf(“%d”,10<20)  ;  1         
+	Printf(“%d”,20<=20)  ;  1
+	Printf(“%d”,20<=5)  ;  0
+	Printf(“%d”,10==20)  ;  0
+	Printf(“%d”,10!=20)  ;  1         
+
+Logical Operator :- (&&,||)-binary
+                      !-unary
+					  
+----Return only 0 or 1 (T or F)---
+
+&&operator:- a&&b=result
+
+		a    0  0 1 1
+		b    0  1 0 1
+	    res  0  0 0 1            
+       
+Ex:-	   int a;---------------------------
+		   a=(0&&1);
+		   printf("%d",a);//0
+           
+           int a;
+           a=0&&printf("hello");               short ckt eveluation
+           printf("%d",a);//0
+           
+           int a;
+		   a=1&&printf("hello");
+		   printf("%d",a;// hello1-------------------
+           		   
+|| opterator :- a||b=res
+
+    a  0 0 1 1
+	b  0 1 0 1
+  res  0 1 1 1
+  
+  Ex:-  int a;
+        a=0||printf("hello");
+		printf("%d",a);//hello1
+		
+		int a;
+		a=1||printf("hello");
+		printf("%d",a);//hello1
+		
+ ! operator:- not(true):flase
+                 !1    : 0
+			  not(flase):true
+			     !0     : 1
+				 
+				 
+				 !5=0
+				 !(-5)=0
+				 !0=1
+				 
+-----------Modify Operator-------------------------------------------
+
+ 1) increment (++)
+ -----------------
+ 
+  -->pre inc(++operand)     |  post inc(op++)
+  
+  
+----> pre inc operator(++operand): firstly increase the value than use
+    
+	int a=0,b;
+	b=++a; 1) a=a+1
+	       2) b=a
+   
+---->post inc operator(operand++): firstly use the value than increase by one
+   
+   int a=0,b;
+	b=a++; 1) b=a
+	       2) a=a+1
+ --------------------------------------------------------------------------
+ 2) decrement(--)
+ ----------------
+ 
+  ---> pre inc(--operand)     |  post inc(op--)
+   
+---->pre dec(--op):firstly decrease by one than use
+
+        int a=1,b;
+         b=--a; 1)a=a-1
+                2) b=a	
+---->pre dec(op--):firstly use the value than decrease by one
+
+        int a=1,b;
+         b=a--; 1)b=a
+                2)a=a-1					
+-----------------------------------------------------------------------------				
+-----------------Bitwise Operator-----------------------------------------
+---->works on binary number
+
+     bitwise AND(&):-perform AND operation on binary numbers
+	 --------------
+	 
+	   int a=7,b=11,c                      
+	   c=a&b;
+	   printf("%d",c);//3
+	   -
+	   0000000000000111-7
+	   0000000000001011-11
+	   0000000000000011-3
+	   
+	 bitwise OR(|):-perform OR operation on binary numbers  
+	 -------------
+	 
+	   int a=7,b=11,c                      
+	   c=a|b;
+	   printf("%d",c);//15
+	   
+	   0000000000000111-7
+	   0000000000001011-11
+	   0000000000001111-15
+	   
+     bitwise X-OR(^):
+	 ----------------    
+		 a 0 1 0 1
+		 b 0 0 1 1
+		 c 0 1 1 0
+		 
+	bitwise shift operator:-
+	------------------------
+    1) left shift(<<)
+	
+	   a=9<<1;//18
+	   0000000000001001
+	
+	
+    2) right shift(>>)	
+	   
+	   a=9<<1;// 4
+	   
+	bitwise NOT(~):- ~a=-(a+1)
+	---------------
+	   a=10;
+	   ~a=-(10+1)=-11
+	   int a=10;
+	       b=~a;
+		   printf("%d",b);//-11
+	   
+------------------flow control statement-------------------------------------
+
+1) selection statement:-execute some selected statement
+              (if,else if, switch)
+			  
+2) lterative statement:- excute a statement many time
+    (loop: for,while ,do-while)
+	
+3) Jump statement:- continue,break,return,goto exit	
+
+selection statement:-
+--------------------
+syntax:-
+
+  if(expersion){----->evaluated to be int
+          //statement
+     }
+	 
+ex:-
+    #include<stdio.h>
+       void main(){
+               int age=15;
+             if(age>=18){
+                printf("your are eligible to vote");//true
+             }
+			 else{
+			    printf("your are not eligible to vote");//flase
+			 }
+			 getch();
+     }
+	 
+	 Note:- if can be used indiviually else 'can'note be used without 'if'
+	 else block is started just after if block.
+	 
+	 Nested if:-
+	 -----------
+	 syntax:-
+	 if(exp)
+	 {
+	    if()exp{
+	 
+	 }
+	 
+	 }
+	 
+	 exp:- if(number<20)
+	          {
+	           if(number>15){
+			     printf("number is greater than 15 but less than 20");
+			   }
+			     else{
+				     printf("number less than 15");
+				 }
+				 
+			   }
+			   else{
+			     printf("number is greater than 20");
+			   }
+	 else if:-
+	 syntax:-
+	 -------
+	 if(exp){
+	 ///code
+	 }
+	 else if(exp){
+	 //
+	 }
+	 else{
+	 //
+	 }
+	 
+	 switch:-
+	  'switch' is keyword
+	  select a choice form multiple choice
+	  'case' keyword is used
+	  
+	  syntax:-
+	  
+	  switch(exp){
+	    case contant:code here
+		  break;
+		  case contant:code here
+		  break;
+		  default:code here
+		      break;
+	  }
+	   
+	  Iterative Statement:-
+	  -------------------
+	  1.for loop:for(initialization;condition;updation){
+	  
+	  }
+	  for(expression1;expression2;expersion){
+	    //code here
+	  }
+	  
+	  ex:-for(1;1;1){
+	     printf("rani");//infanight time
+	  }
+	  1- for(;2;3){
+	  }
+	  2-for(0;;0){
+	  }
+	  3-for(;;){
+	  
+	  }
+	  exp:-
+	  
+	  int i=1;
+	  for(;++i<6;){
+	      printf("%d",i);
+	  }
+	  printf("%d",i);//23456
+	  
+	    int i=1;
+	  for(;i++<6;){
+	      printf("%d",i);
+	  }
+	  printf("%d",i);//234567
+	  
+	  while loop:-
+	  -----------
+		while(condition/exp){--->not optional-(madatory)
+		//code here
+		}
+		
+		exp:-
+		int i=10;
+		while(i){
+		   printf("rani");//10 time rani print
+		   i--;
+		}
+		
+		int n=2548,c=0;
+		while(n!=0){
+		  c++;
+		  n=n/10;
+		}
+	    printf("%d",c);
+		
+loop-->n=2548(n=n/10-->254)--n=254(n=n/10->25)-->n=25(n=n/10->2)-->n=2(n=n/10->0)n=0;//4
+
+     do while loop:-
+     --------------
+	                 do{
+	 
+	                  //code here
+					  
+	                  }while(condition/exp);
+	  
+        exp:-int i=10;
+             do{
+			   printf("rani");
+			 }while("--i");
+			 
+	Jump statement:-
+	---------------
+	continue:skip the remaining part of current iteration  and continue with next iteration.
+	
+	break: terminate the loop for next iteration.
+	
+	goto:
+	
+	{
+	 ----------
+	 ----------
+	 continue;
+	 ---------
+	 ---------skip
+	}
+
+     exp:-
+         for(int i=1; i<=10; i++){
+		  if(i==5)
+		  continue;
+		  printf("%d",i);//-->skip when i=5
+		 }//1234678910
+			 
+	 int i;
+	for(i=1; i<=10; i++){
+		  if(i==6)
+		  break;
+		  printf("%d",i);
+		 }//12345	 
+		 
+		 goto statement:-
+		 ---------------
+		 
+		 void main(){
+		   label 1:
+		   printf("rani");
+		   ----------
+		   ----------
+		   ----------
+		   goto label1;
+		 }
+		 
+		 exp:-1
+		    void main(){
+			  int number=1;
+			  label 1:
+			  printf("hello");
+			  printf("world");
+			  number++;
+			  if(number!=5)
+			  goto label 1;
+			}
+			
+			exp:2
+			
+			  void main(){
+			    int a,b;
+				printf("hello");
+				goto label1;
+				printf("world");
+				label1:
+				printf("enter the number");
+				scanf("%d %d",a,b);
+			  }
+			  
+  function:-
+   1. block of code
+   2. use to perform a specifice task
+   3. code reusability
+   
+   primitive/library|user difined:-
+   
+    function :-
+	printf():stdio.h
+	scanf():conio.h
+	getch():conio.h
+	getche():conio.h
+	getchar():conio.h
+	clrsc():conio.h
+	pow():math.h
+	strlen():string.h
+	
+	
+	userdefined function:-
+	
+	1-function declaration
+	2-function definition
+	3-function calling
+	
+	
+	type function(parameter);
+		
+	function declaration:- return_type fun_name();
+	---------------------	
+	a.Return type with parameter(argument): int fun(int a)(int,char..);
+	b.return type with no parameter: char fun();
+	c.no return type with no parameter: void fun();
+	d.no return type with parameter: void fun(int a);
+	
+	function definition:-
+	---------------------
+	             return_type fun_name(){
+				    //code here
+				 }
+	
+	     void fun(int a){
+		    //code here
+		 }
+		 
+		 function calling:-
+		 --------------------
+		     fun_name();
+			 
+			 void fun(int a){
+			   //code here
+			 }
+		    fun(20);
+			
+		   exp:-
+		   ----
+		   no return type with no parameter:-
+		   ------------------------------------
+		   
+		   #include<stdio.h>
+		   void add();   //function declaration
+		   
+		   void main(){
+		      add();   //function calling
+		   }
+		   
+		   void add(){   //function definition
+		    int a,b,sum;
+			printf("enter both number");
+			sacnf("%d %d",&a,&b);
+			sum=a+b;
+			printf("%d",sum);
+		   }
+		 
+		 no return type with parameter:-
+		 ------------------------------
+		1)  #include<stdio.h>                 
+			 #include<conio.h>
+			 void rem(int int);
+			 
+			 void main()
+			 {
+			 rem(25,3);
+			 }
+			 void rem(int a, int b)
+			 {
+			   int remainder=a%b;
+			   printf("%d",remainder);
+			 }
+			 
+		 
+			2) #include<stdio.h>
+				 #include<conio.h>
+				 void rem(int int);//declar
+				 
+				 void main()
+				 {
+				 int c,d;
+				 printf("enter both number");
+				 scanf("%d %d",&c,&d);
+				 rem(c,d);//calling
+				 }
+				 void rem(int a, int b)// defini
+				 {
+				   int remainder=a%b;
+				   printf("%d",remainder);
+				 }
+				 
+				 return type with no parameter:-
+				 ---------------------------------
+				 
+				 int fun_name();
+				 
+				 exp:-
+				 
+				 int mul();   //declare
+				 void main()
+				 {
+				  printf("%d", mul());//calling
+				 }
+				 int mul()//definition
+				 {
+				   int a,b,m;
+				   m=a*b;
+				  // printf("%d",m);
+				   return m;
+				 }
+				 
+				 Return type with parameter:-
+				 -------------------------------
+				 int fun_name(int,int);
+				 
+				 exp:-
+				 
+				 
+				 int div(int,int);   //declare
+				 void main()
+				 {
+				   div(25,6);//calling
+				 }
+				 int div(int a,int b)//definition
+				 {
+				   int res;
+				   res=a/b;
+				   printf("%d",res);
+				  
+				 }
+				 
+	
+	    Recursion:-function calling in same function.(condition=static)
+		
+		syntax:-
+		   void main()
+		   {
+		     int i=5;
+		      printf("hello");//infinite time
+			  i--;
+			  if(i>0){
+			    main();
+			  }
+		   }
+		    void main()
+		   {
+		     static int i=5;
+		      printf("hello");
+			  i--;
+			  if(i>0){
+			    main();
+			  }
+		   }// 5 time hello print
+		   
+		   Array:-
+		     -> multiple elements of same type width a single variable name. 
+			 -> contigous memory allocation
+			 -> array name represents address of its first elements

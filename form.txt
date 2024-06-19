@@ -1,11 +1,30 @@
 form tag:-
 <form>
+  attribute:-
+		method="get/post" 
+		action="page name|url|location"
+		enctype="mutipart/form-data"
+		autocomplete="ON/OFF"
 <fieldset>
-<legant>
+<legand>
 <label>
+  attribute:-
+    for="unique id"
 <input>
+   attribute:-
+ type="text/password/number/email/color/file/date/date time-local/month/year/weak/range/radio/checbox/search/submit/reset/hidden"
+  name="unique name|"
+  value="value"
+  placeholder="massage"
+  id="id name"
+  
 <select>
 <option>
 <optgroup>
 <button>
 <textarea>
+	rows="number"
+	cols="number"
+value:-required
+disabled
+readonly

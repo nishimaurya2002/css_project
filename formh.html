@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .outer{
+            width:600px;
+            min-height: 400px;
+            border:5px solid #000;
+        }
+        .inner1{
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .inner1 .logo{
+            width:100px;
+            height:100px;
+            margin:20px 0px 20px 20px;
+        }
+        .inner1 .logo img{
+            width:100%;
+            height:100%;
+        }
+        .inner1 .heading{
+            margin:40px 20px 20px 0px;
+        }
+        .heading h1{
+            font-size:40px;
+            word-spacing: 10px;
+
+        }
+        .heading2{
+            width: 100px;
+            height: 30px;
+            background-color: red;
+            text-align: center;
+            font-size: 18px;
+            color: #ffff;
+            border-radius: 5px;
+            margin: -15px 0px 0px 275px;
+            word-spacing: 8px;
+        }
+       .outer .inner2 {
+        margin-top:20px;
+        display: flex;
+         justify-content: space-between;
+         padding: 0px 40px;
+        }
+        .inner2 ul li{
+            list-style: none;
+            font-weight: 600;
+            line-height: 30px;
+        }
+        .inner2  .img{
+            width: 140px;
+            height: 180px;
+            border: 3px solid red;
+            border-radius: 5px;
+        }
+        h4{
+            text-align: center;
+            font-weight: 500;
+        }
+        .outer .inner3{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+     <div class="outer">
+        <div class="inner1">
+            <div class="logo">
+                <img src="images/logo1.png" alt="">
+            </div>
+            <div class="heading">
+                <h1>उत्तर प्रदेश होमगार्ड्स</h1>
+            </div>
+        </div>
+        <div class="heading2">पहचान पत्र</div>
+        <div class="inner2">
+                <div class="list">
+                    <ul>
+                        <li>रेजी नं. :</li>
+                        <li>नाम :</li>
+                        <li>पद :</li>
+                        <li>जारी करने तिथि :</li>
+                        <li>भर्ती की तिथि :</li>
+                        <li>पिता का नाम :</li>
+                        <li>मो. नं. :</li>
+                        <li>स्थाई पता  :</li><br>
+                        <li> नियुक्ति स्थान:</li>
+                        <li>ब्लड ग्रुप:</li>
+                    </ul>
+                </div>
+                <div class="img"></div>
+        </div>
+        <h4>पहचान चिन्ह:</h4>
+        <div class="inner3">
+          <p>धारक के हस्ताक्षर</p>
+         <p>जारी कर्ता के हस्ताक्षर व मोहर</p>
+        </div>
+     </div> 
+</body>
+</html>
